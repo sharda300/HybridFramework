@@ -33,7 +33,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 	public static WebDriver driver;
 	public static Properties prop;
-	public static Map<String,Map<String,String>> dt;
+	public  Map<String,Map<String,String>> dt;
 	public static ExtentHtmlReporter htmLReporter;
 	public static ExtentReports extent;
 	public static ExtentTest Logger;
@@ -41,6 +41,7 @@ public class BaseTest {
 	@BeforeSuite
 	public void Intiation()
 	{
+		System.out.println("This is Main's code");
 		createExtentReport();
 		//System.exit(0);
 		System.out.println("Iniation is in progress");
